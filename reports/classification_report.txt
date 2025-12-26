@@ -1,0 +1,38 @@
+============================================================
+ASSESSMENT QUESTION DIFFICULTY CLASSIFICATION REPORT
+============================================================
+
+Model Type: RANDOM_FOREST
+Total Samples: 30
+
+PERFORMANCE METRICS
+------------------------------------------------------------
+Accuracy:  1.0000
+Precision: 1.0000
+Recall:    1.0000
+F1-Score:  1.0000
+
+CLASS DISTRIBUTION
+------------------------------------------------------------
+EASY         8 samples ( 26.7%)
+MEDIUM      13 samples ( 43.3%)
+HARD         9 samples ( 30.0%)
+
+CONFUSION MATRIX
+------------------------------------------------------------
+            easy   medium     hard
+    easy       8        0        0
+  medium       0       13        0
+    hard       0        0        9
+
+DETAILED CLASSIFICATION REPORT
+------------------------------------------------------------
+              precision    recall  f1-score   support
+
+        easy       1.00      1.00      1.00         8
+      medium       1.00      1.00      1.00        13
+        hard       1.00      1.00      1.00         9
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
