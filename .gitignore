@@ -137,8 +137,3 @@ dmypy.json
 # Data files (CSV большие размеры)
 data/*.csv
 !data/sample_questions.csv
-
-# Generated reports
-reports/
-*.png
-*.jpg
