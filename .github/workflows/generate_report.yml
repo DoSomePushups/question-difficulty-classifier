@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
     
     - name: Generate classification report
-      run: python src/main.py
+      run: python -m src.main
     
     - name: Upload report as artifact
       uses: actions/upload-artifact@v4
