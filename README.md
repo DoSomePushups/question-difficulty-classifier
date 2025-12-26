@@ -1,6 +1,7 @@
 # Assessment Question Difficulty Classifier
 
-![Tests](https://github.com/DoSomePushups/question-difficulty-classifier/workflows/Tests/badge.svg)
+![Tests](https://github.com/DoSomePushups/question-difficulty-classifier/actions/workflows/tests.yml/badge.svg)
+![Report](https://github.com/DoSomePushups/question-difficulty-classifier/actions/workflows/generate_report.yml/badge.svg)
 ![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)
 
 ## 📚 Описание проекта
