@@ -40,6 +40,19 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add reports/ || true
-        git commit -m "Auto-generated classification report [skip ci]" || echo "No changes to commit"
-        git push || echo "Nothing to push"
+        
+        # 1. Проверяем, создалась ли папка
+        ls -la reports/
+        
+        # 2. Добавляем всё
+        git add reports/
+        
+        # 3. Делаем коммит только если есть изменения
+        # Если изменений нет, workflow не упадет, но выведет сообщение
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-generated classification report"
+          git push
+        fi
+
